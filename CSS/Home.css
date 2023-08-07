@@ -1,0 +1,253 @@
+
+	.Home_Container{
+		max-width:100%;
+		min-height: 800px;
+		display: flex;
+		flex-direction: row;
+		background-color: var(--First_bg_color);
+		gap: 20px;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	.Home_Container_code_img{
+	flex: 1;
+	min-height: 350px;
+	min-width: 350px;
+	
+	}
+
+
+	.Home_Container_code_display{
+	flex: 1;
+	min-height: 350px;
+	min-width: 350px;
+	background-color: transparent;
+	}
+	.Home_Container .Home_Container_code_display p{
+	color: var(--black_color);
+	font-size: 40px;
+	}
+	.Home_Container_compiler_Frame{
+		flex: 1;
+		justify-content: center;
+		align-self:end;
+		display:flex;
+		background-color:var(--First_bg_color);
+		min-width: 100%;
+		height:300px;	
+	}
+	.Home_Container_compiler_Frame_code_box{
+	background-color:var(--black_color);
+	height:150px;
+	width: 90%;
+	flex-wrap: wrap;
+	gap: 20px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-self: center;
+	justify-content: left;
+	display: flex;
+	border-radius: 10px;
+	}
+	.Home_Container .Home_Container_compiler_Frame .Home_Container_compiler_Frame_code_box p{
+	font-size: 20px;
+	color: var(--T);
+	}
+
+	.container {
+		
+		width: 380px;
+		height: 50px;
+	}
+	.content {
+		display: block;
+		position: sticky;
+		overflow: hidden;
+		font-family: 'Lato', sans-serif;
+		font-size: 35px;
+		line-height: 40px;
+		color: #ecf0f1;
+	}
+	.content__container {
+		font-weight: 600;
+		overflow: hidden;
+		height: 40px;
+		padding: 0 40px;
+	}
+
+	.content__container:before {
+		content: '[';
+		left: 0;
+	}
+
+	.content__container:after {
+		content: ']';
+		position: absolute;
+		right: 0;
+	}
+
+	.content__container:after, .content__container:before {
+		position: absolute;
+		top: -2px;
+		color: #16a085;
+		font-size: 42px;
+		line-height: 40px;
+		-webkit-animation-name: opacity;
+		-webkit-animation-duration: 2s;
+		-webkit-animation-iteration-count: infinite;
+		animation-name: opacity;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+	}
+
+	.content__container__text {
+		display: inline;
+		float: left;
+		margin: 0;
+	}
+
+	.content__container__list {
+		margin-top: 0;
+		padding-left: 110px;
+		text-align: left;
+		list-style: none;
+		-webkit-animation-name: change;
+		-webkit-animation-duration: 10s;
+		-webkit-animation-iteration-count: infinite;
+		animation-name: change;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+	}
+
+	.content__container__list__item {
+		line-height: 40px;
+		margin: 0;
+	}
+
+	@keyframes opacity {
+		0%, 100% {
+		opacity: 0;
+	}
+
+	50% {
+   	 opacity: 1;
+	}
+	}
+	@keyframes change {
+		0%, 12.66%, 100% {
+		transform: translate3d(0, 0, 0);
+	}
+		16.66%, 29.32% {
+		transform: translate3d(0, -25%, 0);
+	}
+		33.32%, 45.98% {
+		transform: translate3d(0, -50%, 0);
+	}
+		49.98%, 62.64% {
+		transform: translate3d(0, -75%, 0);
+	}
+		66.64%, 79.3% {
+		transform: translate3d(0, -50%, 0);
+	}
+		83.3%, 95.96% {
+		transform: translate3d(0, -25%, 0);
+	}
+	}
+
+.card {
+flex:1;
+  min-width: 450px;
+  height: 400px;
+  background: #00002C;
+  border: 1px solid #000045;
+  font-size: 14px;
+  font-family: monospace;
+  overflow: auto;
+border-radius: 4px;
+}
+
+.titlebar {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 21px;
+  font-weight: 450;
+  background-color: #000045;
+  width: 100%;
+  text-align: right;
+}
+
+.card button {
+  width: 40px;
+  height: 35px;
+  margin-left: -5px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  transition: 0.2s;
+}
+
+button svg path, 
+button svg rect, 
+button svg polygon {
+  fill: #ffffff;
+}
+
+button svg {
+  width: 10px;
+  height: 10px;
+}
+
+.close:hover {
+  background-color: #e81123;
+}
+
+.maximize:hover {
+  background-color: #c042ff2e;
+}
+
+.minimize:hover {
+  background-color: #c042ff2e;
+}
+
+
+li {
+width:100%;
+flex:1;
+flex-wrap: wrap;		
+display: list-item;
+text-align: left;
+font-family:verdana;
+color:green;
+font-size:100%;
+}
+ol {		
+list-style-type: decimal;
+}
+
+h5{		
+color: var(--T); 
+font-family: "Courier";
+font-size: 20px;
+margin: 10px 0 0 10px;
+white-space: nowrap;
+overflow: hidden;
+width:30em;
+animation: type 4s steps(60, end); 
+}
+h5:nth-child(2){
+animation: type2 8s steps(60, end);
+}
+@keyframes type{ 
+from { width: 0; } 
+} 
+@keyframes type2{
+0%{width: 0;}
+50%{width: 0;}
+100%{ width: 100; } 
+} 
+@keyframes blink{
+to{opacity: .0;}
+}
+::selection{
+background: black;
+}
